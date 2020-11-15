@@ -1,0 +1,9 @@
+[
+  {
+    "title": "starter",
+    "starterFields": {
+      "repoUrl": "https://github.com/<user>/<name>",
+      "url": "https://www.domain.tld"
+    }
+  }
+]

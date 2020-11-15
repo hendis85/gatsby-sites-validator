@@ -1,0 +1,6 @@
+gsv
+.env
+!.env.example
+__pycache__
+.DS_Store
+starters.json
