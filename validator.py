@@ -6,7 +6,7 @@ import logging
 from datetime import datetime, timedelta
 from utils import validateWebsites, validateRepositories
 
-staleDate = datetime.now() - timedelta(weeks=4)
+staleDate = datetime.now() - timedelta(weeks=26)
 
 parser = argparse.ArgumentParser(
     description="A script to check starter & showcase sites on gatsbyjs.com. The input needs to be a JSON file with a specific format. You can check the JSON against the starter OR showcase validation.")

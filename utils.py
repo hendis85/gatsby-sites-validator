@@ -41,7 +41,7 @@ def validateWebsites(json):
     invalid_entries = []
     for entry in entries:
         title = entry["title"]
-        url = entry["starterFields"]["url"]
+        url = entry["meta"]["url"]
         logging.info("Checking %s" % url)
         websiteOnline = websiteIsOnline(url)
         if not websiteOnline:
@@ -63,7 +63,7 @@ def validateRepositories(json, referenceDate):
     stale_entries = []
     for entry in entries:
         title = entry["title"]
-        repoUrl = entry["starterFields"]["repoUrl"]
+        repoUrl = entry["meta"]["repoUrl"]
         logging.info("Checking %s" % repoUrl)
         cleanedRepoUrl = urlparse(repoUrl).path.strip("/").replace(".git", "")
         repo = getRepo(cleanedRepoUrl)

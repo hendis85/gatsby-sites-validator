@@ -1,7 +1,7 @@
 [
   {
     "title": "starter",
-    "starterFields": {
+    "meta": {
       "repoUrl": "https://github.com/<user>/<name>",
       "url": "https://www.domain.tld"
     }
